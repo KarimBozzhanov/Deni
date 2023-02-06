@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Desi</string>
+    <string name="next">Далее</string>
+    <string name="login">Войти</string>
+    <string name="email">Электронная почта</string>
+    <string name="password">Пароль</string>
+    <string name="googleAuth">Или продолжить с помощью</string>
+    <string name="google">Google</string>
+    <string name="forgotYourPass">Забыли пароль?</string>
+    <string name="registerLink">Еще не зарегистрированы? </string>
+    <string name="register">Регистрация</string>
+    <string name="name">Имя</string>
+    <string name="confirmPass">Повторите пароль</string>
+    <string name="loginLink">У вас есть аккаунт?</string>
+</resources>

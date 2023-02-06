@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "932827097136",
+    "project_id": "desi-cb933",
+    "storage_bucket": "desi-cb933.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:932827097136:android:76deba95bef13fdf3425f5",
+        "android_client_info": {
+          "package_name": "com.example.deni"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "932827097136-55roi789j9q59dge45g6trsc11p6765c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.deni",
+            "certificate_hash": "0ada492bd156d09632cf58c4dd339d05eb4d224d"
+          }
+        },
+        {
+          "client_id": "932827097136-e4sbbe9g3i7orlpnjks1nq55g1qt929e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCX0Mes_OumP9E30FqyOd1VR7RaX261AdE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "932827097136-e4sbbe9g3i7orlpnjks1nq55g1qt929e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

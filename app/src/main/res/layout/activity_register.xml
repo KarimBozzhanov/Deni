@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainColor"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:layout_width="82dp"
+        android:layout_height="92dp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"
+        android:layout_marginTop="77dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:layout_gravity="center"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="67dp"/>
+
+    <EditText
+        android:id="@+id/nameText"
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="36dp"
+        android:hint="@string/name"
+        android:paddingLeft="13dp"
+        android:paddingBottom="13dp"
+        android:paddingTop="13dp"
+        android:background="@color/textFields"
+        />
+
+    <EditText
+        android:id="@+id/registerEmailText"
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="23dp"
+        android:hint="@string/email"
+        android:paddingLeft="13dp"
+        android:paddingBottom="13dp"
+        android:paddingTop="13dp"
+        android:background="@color/textFields"
+        />
+
+    <EditText
+        android:id="@+id/registerPassText"
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="23dp"
+        android:hint="@string/password"
+        android:paddingLeft="13dp"
+        android:paddingBottom="13dp"
+        android:paddingTop="13dp"
+        android:background="@color/textFields"
+        android:inputType="textPassword"
+        />
+
+    <EditText
+        android:id="@+id/confirmPassText"
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="23dp"
+        android:hint="@string/confirmPass"
+        android:paddingLeft="13dp"
+        android:paddingBottom="13dp"
+        android:paddingTop="13dp"
+        android:background="@color/textFields"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="293dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="37dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/green"
+        android:text="@string/register"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="15dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:background="@color/mainColor">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loginLink"
+            android:textColor="@color/goldy"
+            android:textSize="12dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            />
+
+        <Button
+            style="@style/Widget.Material3.Button.TextButton"
+            android:id="@+id/loginBtn"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/mainColor"
+            android:paddingLeft="0dp"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:textColor="@color/green"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:onClick="loginActivity"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
