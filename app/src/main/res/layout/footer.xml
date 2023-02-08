@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/footer_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/headerBackground">
+
+        <Button
+            android:id="@+id/home_btn"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+            android:drawableTop="@drawable/home_btn"
+            android:fontFamily="@font/humanist521bt_roman"
+            android:paddingHorizontal="0dp"
+            android:text="@string/home"
+            android:textColor="@color/goldy"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/vacancies_btn"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@android:color/transparent"
+            android:drawableTop="@drawable/layers_btn"
+            android:fontFamily="@font/humanist521bt_roman"
+            android:paddingTop="0dp"
+            android:paddingBottom="4dp"
+            android:text="@string/vacancies"
+            android:textColor="@color/grey"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/projects_btn"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:backgroundTint="@android:color/transparent"
+            android:drawableTop="@drawable/grey_document"
+            android:fontFamily="@font/humanist521bt_roman"
+            android:paddingTop="0dp"
+            android:paddingBottom="2dp"
+            android:text="@string/projects"
+            android:textColor="@color/grey"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/my_projects_btn"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+            android:drawableTop="@drawable/grey_widget"
+            android:fontFamily="@font/humanist521bt_roman"
+            android:paddingTop="0dp"
+            android:paddingBottom="2dp"
+            android:text="@string/my_project"
+            android:textColor="@color/grey"
+            android:textSize="16dp" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+</LinearLayout>

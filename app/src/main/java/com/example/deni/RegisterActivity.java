@@ -83,7 +83,7 @@ public class RegisterActivity extends AppCompatActivity {
                                     @Override
                                     public void onSuccess(Void unused) {
                                         progressDialog.cancel();
-                                        Log.d(LOG_TAG, "createUserWithEmail:success");
+                                        Toast.makeText(RegisterActivity.this, "Добро пожаловать " + user.getDisplayName(), Toast.LENGTH_SHORT).show();
                                         Intent i = new Intent(RegisterActivity.this, HomeActivity.class);
                                         startActivity(i);
                                     }

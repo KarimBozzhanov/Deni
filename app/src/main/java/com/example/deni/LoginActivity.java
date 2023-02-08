@@ -63,7 +63,7 @@ public class LoginActivity extends AppCompatActivity {
                     public void onSuccess(AuthResult authResult) {
                         progressDialog.cancel();
                         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-                        Toast.makeText(LoginActivity.this, "Добро пожаловать" + user.getDisplayName(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(LoginActivity.this, "Добро пожаловать " + user.getDisplayName(), Toast.LENGTH_SHORT).show();
                         Intent i = new Intent(LoginActivity.this, HomeActivity.class);
                         startActivity(i);
                     }
