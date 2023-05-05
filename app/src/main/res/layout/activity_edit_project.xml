@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateVacanciesFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_project_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="14dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/textFields"
+                android:hint="@string/vacancyName"
+                android:inputType="textCapWords"
+                android:paddingVertical="10dp"
+                android:paddingLeft="15dp"
+                android:textColorHint="@color/grey" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/edit_project_categories_spinner"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="14dp"
+                    android:backgroundTint="@color/grey"
+                    android:popupBackground="@color/dark_grey" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edit_project_term"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="14dp"
+                android:layout_marginTop="17dp"
+                android:background="@color/textFields"
+                android:hint="@string/projectTerm"
+                android:paddingVertical="10dp"
+                android:paddingLeft="15dp"
+                android:textColorHint="@color/grey" />
+
+            <EditText
+                android:id="@+id/edit_project_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="14dp"
+                android:layout_marginTop="17dp"
+                android:background="@color/textFields"
+                android:hint="@string/projectDescription"
+                android:paddingVertical="10dp"
+                android:paddingLeft="15dp"
+                android:textColorHint="@color/grey"
+                android:inputType="textCapSentences"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edit_project_salary"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="17dp"
+                    android:background="@color/textFields"
+                    android:hint="Плата"
+                    android:paddingVertical="10dp"
+                    android:paddingLeft="15dp"
+                    android:textColorHint="@color/grey"
+                    android:inputType="text"/>
+
+                <Spinner
+                    android:id="@+id/edit_project_salary_currency"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="14dp"
+                    android:backgroundTint="@color/grey"
+                    android:popupBackground="@color/dark_grey"/>
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Contacts"
+                android:textSize="20dp"
+                android:layout_marginLeft="18dp"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:id="@+id/edit_project_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="14dp"
+                android:layout_marginTop="17dp"
+                android:background="@color/textFields"
+                android:hint="@string/phone"
+                android:drawableStart="@drawable/phone"
+                android:paddingVertical="10dp"
+                android:paddingLeft="10dp"
+                android:drawablePadding="@dimen/drawablePadding"
+                android:textColorHint="@color/grey"
+                android:inputType="phone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/links"
+                android:textSize="20dp"
+                android:layout_marginLeft="18dp"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:id="@+id/edit_project_instagram"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="14dp"
+                android:layout_marginTop="17dp"
+                android:background="@color/textFields"
+                android:hint="@string/instagram"
+                android:drawableStart="@drawable/instagram"
+                android:paddingVertical="10dp"
+                android:paddingLeft="10dp"
+                android:drawablePadding="@dimen/drawablePadding"
+                android:textColorHint="@color/grey"
+                android:inputType="text"/>
+
+            <EditText
+                android:id="@+id/edit_project_telegram"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="14dp"
+                android:layout_marginTop="17dp"
+                android:background="@color/textFields"
+                android:hint="@string/telegram"
+                android:drawableStart="@drawable/telegram"
+                android:paddingVertical="10dp"
+                android:paddingLeft="10dp"
+                android:drawablePadding="@dimen/drawablePadding"
+                android:textColorHint="@color/grey"
+                android:inputType="text"/>
+
+            <EditText
+                android:id="@+id/edit_project_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="14dp"
+                android:layout_marginTop="17dp"
+                android:background="@color/textFields"
+                android:hint="@string/email_text"
+                android:drawableStart="@drawable/email"
+                android:paddingVertical="10dp"
+                android:paddingLeft="10dp"
+                android:drawablePadding="@dimen/drawablePadding"
+                android:textColorHint="@color/grey"
+                android:inputType="text"/>
+
+            <Button
+                android:id="@+id/editProject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/change"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="14dp"
+                android:backgroundTint="@color/headerBackground"
+                android:textColor="@color/goldyGradient"
+                android:fontFamily="@font/humanist521bt_roman"
+                android:textStyle="bold"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

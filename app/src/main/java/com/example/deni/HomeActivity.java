@@ -1,53 +1,83 @@
 package com.example.deni;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.media.Image;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
 
-public class HomeActivity extends AppCompatActivity {
+import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
+import org.w3c.dom.Text;
+
+import java.util.ArrayList;
+
+import kotlin.jvm.internal.Lambda;
+
+public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
+
+    private static final String LOG_TAG = CreateSummaryFragment.class.getName();
     private HomeFragment homeFragment = new HomeFragment();
     Toolbar toolBar;
     DrawerLayout mDrawerLayout;
     ActionBarDrawerToggle mDrawerToggle;
-    ImageButton userButton;
     Button home_btn, vacancies_btn, projects_btn, my_projects_btn;
     LinearLayout hamMenu;
     Context con = this;
+
+    TextView userName;
+    NavigationView navigationView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         toolBar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolBar);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.home_activity);
+        navigationView = findViewById(R.id.menuNavigationView);
+        View navigationHeader = navigationView.inflateHeaderView(R.layout.menu_header);
+        userName = (TextView) navigationHeader.findViewById(R.id.userName);
+        userName.setText(user.getDisplayName());
         hamMenu = (LinearLayout) findViewById(R.id.hamMenu);
-        userButton = (ImageButton) findViewById(R.id.userBtn);
         mDrawerLayout.setDrawerListener(mDrawerToggle);
-        userButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if(mDrawerLayout.isDrawerOpen(hamMenu)){
-                    mDrawerLayout.closeDrawer(hamMenu);
-                } else if (!mDrawerLayout.isDrawerOpen(hamMenu)){
-                    mDrawerLayout.openDrawer(hamMenu);
-                }
-            }
-        });
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, mDrawerLayout, toolBar, R.string.OpenDrawer, R.string.CloseDrawer);
+        mDrawerLayout.addDrawerListener(toggle);
+        navigationView.setNavigationItemSelectedListener(this);
+        toggle.syncState();
+
+
+
+        navigationView.bringToFront();
+
         home_btn = (Button) findViewById(R.id.home_btn);
         vacancies_btn = (Button) findViewById(R.id.vacancies_btn);
         projects_btn = (Button) findViewById(R.id.projects_btn);
@@ -133,10 +163,46 @@ public class HomeActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    public void onBackPressed() {
+        if (mDrawerLayout.isDrawerOpen(GravityCompat.START)){
+            mDrawerLayout.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
+        }
+    }
+
     private void setFragment(Fragment fragment){
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.frame_layout, fragment);
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == R.id.profile) {
+            mDrawerLayout.closeDrawer(GravityCompat.START);
+            Intent i = new Intent(HomeActivity.this, ProfileActivity.class);
+            startActivity(i);
+            return true;
+        }
+        if (item.getItemId() == R.id.portfolio) {
+            mDrawerLayout.closeDrawer(GravityCompat.START);
+            Intent i = new Intent(HomeActivity.this, PortfolioActivity.class);
+            startActivity(i);
+            return true;
+        }
+        if (item.getItemId() == R.id.signOut) {
+            mDrawerLayout.closeDrawer(GravityCompat.START);
+            Toast.makeText(HomeActivity.this, "До свидания " + FirebaseAuth.getInstance().getCurrentUser().getDisplayName(), Toast.LENGTH_SHORT).show();
+            FirebaseAuth.getInstance().signOut();
+            Intent i = new Intent(HomeActivity.this, MainActivity.class);
+            startActivity(i);
+            finishAffinity();
+            return true;
+        }
+
+        return false;
     }
 }

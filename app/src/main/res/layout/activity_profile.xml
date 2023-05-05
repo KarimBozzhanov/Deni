@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:orientation="vertical"
+    android:background="@color/hamMenuBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="153dp"
+        android:orientation="vertical"
+        android:background="@color/headerBackground">
+
+        <Button
+            android:id="@+id/closeProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_gravity="right"
+            android:drawableRight="@drawable/close_btn" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/detailProfileImage"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:src="@drawable/avatar"
+                android:layout_marginLeft="33dp"
+                android:layout_marginBottom="27dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/detailUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="userName"
+                    android:layout_marginLeft="27dp"
+                    android:textSize="25dp"
+                    android:textColor="@color/golden"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/userFirstName"
+            android:layout_marginLeft="34dp"
+            android:paddingRight="47dp"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="32dp"/>
+
+        <TextView
+            android:id="@+id/fullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Не указано"
+            android:textSize="15dp"
+            android:layout_marginTop="32dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/userCity"
+            android:layout_marginLeft="34dp"
+            android:paddingRight="35dp"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="32dp"/>
+
+        <TextView
+            android:id="@+id/userCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Не указан"
+            android:textSize="15dp"
+            android:layout_marginTop="32dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Спец. : "
+            android:layout_marginLeft="34dp"
+            android:paddingRight="28dp"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="32dp"/>
+
+        <TextView
+            android:id="@+id/userSpeciality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Не указана"
+            android:textSize="15dp"
+            android:layout_marginTop="32dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email: "
+            android:layout_marginLeft="34dp"
+            android:paddingRight="35dp"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="32dp"/>
+
+        <TextView
+            android:id="@+id/userEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Не указан"
+            android:textSize="15dp"
+            android:layout_marginTop="32dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Пол: "
+            android:layout_marginLeft="34dp"
+            android:paddingRight="48dp"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/userGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Не указан"
+            android:textSize="15dp"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Получать уведомления на почту: "
+            android:layout_marginLeft="34dp"
+            android:paddingRight="5dp"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/userNotifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Да"
+            android:textSize="18dp"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom">
+        <Button
+            android:id="@+id/editProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/greenGradient"
+            android:textAllCaps="false"
+            android:text="@string/edit"
+            android:layout_marginHorizontal="36dp"
+            android:paddingVertical="15dp"
+            android:layout_marginBottom="38dp"
+            android:textSize="15dp"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

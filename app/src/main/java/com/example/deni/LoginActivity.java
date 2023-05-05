@@ -7,6 +7,7 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -32,6 +33,8 @@ public class LoginActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
 
         progressDialog = new ProgressDialog(this);
+        progressDialog.getWindow().setGravity(Gravity.CENTER);
+        progressDialog.setMessage("Вход...");
         Button loginButton = (Button) findViewById(R.id.loginButton);
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -77,8 +80,10 @@ public class LoginActivity extends AppCompatActivity {
                             Toast.makeText(LoginActivity.this, "Неверный пароль", Toast.LENGTH_SHORT).show();
                         } else if(e.getMessage().equals("There is no user record corresponding to this identifier. The user may have been deleted.")){
                             Toast.makeText(LoginActivity.this, "Неверная почта", Toast.LENGTH_SHORT).show();
-                        } else {
-                            Toast.makeText(LoginActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                        } else if (e.getMessage().equals("A network error (such as timeout, interrupted connection or unreachable host) has occurred.")){
+                            Toast.makeText(LoginActivity.this, "Повторите попытку позже", Toast.LENGTH_SHORT).show();
+                        } else if(e.getMessage().equals("An internal error has occurred. [ Failed to connect to www.googleapis.com/142.251.1.95:443 ]")){
+                            Toast.makeText(LoginActivity.this, "Проблемы с подключением", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });

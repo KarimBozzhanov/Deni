@@ -13,15 +13,14 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+    <style name="systemButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:background">@drawable/rounded_button</item>
+        <item name="android:backgroundTint">@color/headerBackground</item>
+    </style>
     <style name="Theme.Deni.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
     <style name="Theme.Deni.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
     <style name="Theme.Deni.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
-    <style name="rounded_image">
-        <item name="cornerFamily">rounded</item>
-        <item name="cornerSize">50dp</item>
-        <item name="color">@color/hamMenuBackground</item>
-    </style>
 </resources>

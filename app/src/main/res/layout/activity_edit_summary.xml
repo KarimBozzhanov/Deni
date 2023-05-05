@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/mainColor"
+    tools:context=".EditSummaryActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editDesignerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="14dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/textFields"
+                android:hint="@string/userName"
+                android:inputType="textCapWords"
+                android:paddingVertical="10dp"
+                android:paddingLeft="15dp"
+                android:textColorHint="@color/grey" />
+
+            <EditText
+                android:id="@+id/editSpeciality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="14dp"
+                android:layout_marginTop="17dp"
+                android:background="@color/textFields"
+                android:hint="@string/speciality"
+                android:inputType="textCapSentences"
+                android:paddingVertical="10dp"
+                android:paddingLeft="15dp"
+                android:textColorHint="@color/grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/edit_categories_spinner"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="14dp"
+                    android:backgroundTint="@color/grey"
+                    android:popupBackground="@color/dark_grey" />
+
+                <Spinner
+                    android:id="@+id/edit_job_type"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="14dp"
+                    android:backgroundTint="@color/grey"
+                    android:popupBackground="@color/dark_grey" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edit_experience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="14dp"
+                android:layout_marginTop="17dp"
+                android:background="@color/textFields"
+                android:hint="@string/experience"
+                android:inputType="textCapSentences"
+                android:paddingVertical="10dp"
+                android:paddingLeft="15dp"
+                android:textColorHint="@color/grey" />
+
+            <EditText
+                android:id="@+id/edit_education"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="14dp"
+                android:layout_marginTop="17dp"
+                android:background="@color/textFields"
+                android:hint="@string/education"
+                android:paddingVertical="10dp"
+                android:paddingLeft="15dp"
+                android:textColorHint="@color/grey" />
+
+            <EditText
+                android:id="@+id/edit_skills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="14dp"
+                android:layout_marginTop="17dp"
+                android:background="@color/textFields"
+                android:hint="@string/skills"
+                android:paddingVertical="10dp"
+                android:paddingLeft="15dp"
+                android:textColorHint="@color/grey" />
+
+            <EditText
+                android:id="@+id/edit_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="14dp"
+                android:layout_marginTop="17dp"
+                android:background="@color/textFields"
+                android:hint="@string/information"
+                android:paddingVertical="10dp"
+                android:paddingLeft="15dp"
+                android:textColorHint="@color/grey" />
+
+            <EditText
+                android:id="@+id/edit_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="14dp"
+                android:layout_marginTop="17dp"
+                android:background="@color/textFields"
+                android:hint="@string/city"
+                android:paddingVertical="10dp"
+                android:paddingLeft="15dp"
+                android:textColorHint="@color/grey"
+                android:inputType="textCapSentences"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edit_salary"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="17dp"
+                    android:background="@color/textFields"
+                    android:hint="@string/salary"
+                    android:paddingVertical="10dp"
+                    android:paddingLeft="15dp"
+                    android:textColorHint="@color/grey"
+                    android:inputType="text"/>
+
+                <Spinner
+                    android:id="@+id/edit_salary_currency"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="14dp"
+                    android:backgroundTint="@color/grey"
+                    android:popupBackground="@color/dark_grey"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Contacts"
+                android:textSize="20dp"
+                android:layout_marginLeft="18dp"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:id="@+id/edit_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="14dp"
+                android:layout_marginTop="17dp"
+                android:background="@color/textFields"
+                android:hint="@string/phone"
+                android:drawableStart="@drawable/phone"
+                android:paddingVertical="10dp"
+                android:paddingLeft="10dp"
+                android:drawablePadding="@dimen/drawablePadding"
+                android:textColorHint="@color/grey"
+                android:inputType="phone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/links"
+                android:textSize="20dp"
+                android:layout_marginLeft="18dp"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:id="@+id/editInstagram"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="14dp"
+                android:layout_marginTop="17dp"
+                android:background="@color/textFields"
+                android:hint="@string/instagram"
+                android:drawableStart="@drawable/instagram"
+                android:paddingVertical="10dp"
+                android:paddingLeft="10dp"
+                android:drawablePadding="@dimen/drawablePadding"
+                android:textColorHint="@color/grey"
+                android:inputType="text"/>
+
+            <EditText
+                android:id="@+id/editTelegram"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="14dp"
+                android:layout_marginTop="17dp"
+                android:background="@color/textFields"
+                android:hint="@string/telegram"
+                android:drawableStart="@drawable/telegram"
+                android:paddingVertical="10dp"
+                android:paddingLeft="10dp"
+                android:drawablePadding="@dimen/drawablePadding"
+                android:textColorHint="@color/grey"
+                android:inputType="text"/>
+
+            <Button
+                android:id="@+id/editSummary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/changePost"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="14dp"
+                android:backgroundTint="@color/headerBackground"
+                android:textColor="@color/goldyGradient"
+                android:fontFamily="@font/humanist521bt_roman"
+                android:textStyle="bold"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

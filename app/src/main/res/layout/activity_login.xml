@@ -36,6 +36,7 @@
         android:paddingBottom="13dp"
         android:paddingTop="13dp"
         android:background="@color/textFields"
+        android:inputType="text"
         />
 
     <EditText

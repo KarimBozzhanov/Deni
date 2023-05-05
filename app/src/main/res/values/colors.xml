@@ -16,4 +16,10 @@
     <color name="goldyGradient">#FFF1BE</color>
     <color name="hamMenuBackground">#212121</color>
     <color name="grey">#515151</color>
+    <color name="dark_grey">#1D1D1D</color>
+    <color name="diamond">#FFF1BE</color>
+    <color name="medium_grey">#292929</color>
+    <color name="change_btn">#1B1B1B</color>
+    <color name="greenGradient">#86D679</color>
+    <color name="blueGradient">#2D70A8</color>
 </resources>

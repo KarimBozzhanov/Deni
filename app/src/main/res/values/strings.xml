@@ -13,23 +13,188 @@
     <string name="confirmPass">Повторите пароль</string>
     <string name="loginLink">У вас есть аккаунт?</string>
     <string name="title_activity_home">HomeActivity</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
     <string name="home">Главная</string>
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="profile">Профиль</string>
-    <string name="porfolio">Портфолио</string>
+    <string name="portfolio">Портфолио</string>
     <string name="settings">Настройки</string>
     <string name="Log_out">Выйти</string>
     <string name="vacancies">Вакансии</string>
     <string name="projects">Проекты</string>
     <string name="my_project">Мои проекты</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="searchHint">Название, тип работы</string>
+    <string name="search">Поиск</string>
+    <string name="add_resume">Добавление резюме</string>
+    <string name="summary">Резюме</string>
+    <string name="create_vacancies">Вакансии</string>
+    <string name="create_projects">Проекты</string>
+
+    <string-array name="categories">
+        <item>Категории</item>
+        <item>3D моделирование</item>
+        <item>Визуализация</item>
+        <item>Дизайн и архитектура</item>
+        <item>Рабочая документация</item>
+    </string-array>
+
+    <string-array name="categoryModel">
+        <item>3D моделирование</item>
+        <item>Визуализация</item>
+        <item>Дизайн и архитектура</item>
+        <item>Рабочая документация</item>
+    </string-array>
+
+    <string-array name="categoryVisual">
+        <item>Визуализация</item>
+        <item>3D моделирование</item>
+        <item>Дизайн и архитектура</item>
+        <item>Рабочая документация</item>
+    </string-array>
+
+    <string-array name="categoryDesign">
+        <item>Дизайн и архитектура</item>
+        <item>3D моделирование</item>
+        <item>Визуализация</item>
+        <item>Рабочая документация</item>
+    </string-array>
+
+    <string-array name="categoryDoc">
+        <item>Рабочая документация</item>
+        <item>3D моделирование</item>
+        <item>Визуализация</item>
+        <item>Дизайн и архитектура</item>
+    </string-array>
+
+
+    <string-array name="jobType">
+        <item>Тип работы</item>
+        <item>Удаленная работа</item>
+        <item>Работа в офисе</item>
+        <item>Непол.Занятость</item>
+        <item>Пол.Занятость</item>
+        <item>Частич.Занятость</item>
+    </string-array>
+
+    <string-array name="distantWork">
+        <item>Удаленная работа</item>
+        <item>Работа в офисе</item>
+        <item>Непол.Занятость</item>
+        <item>Пол.Занятость</item>
+        <item>Частич.Занятость</item>
+    </string-array>
+
+    <string-array name="workInOffice">
+        <item>Работа в офисе</item>
+        <item>Удаленная работа</item>
+        <item>Непол.Занятость</item>
+        <item>Пол.Занятость</item>
+        <item>Частич.Занятость</item>
+    </string-array>
+
+    <string-array name="incompleteWork">
+        <item>Непол.Занятость</item>
+        <item>Удаленная работа</item>
+        <item>Работа в офисе</item>
+        <item>Пол.Занятость</item>
+        <item>Частич.Занятость</item>
+    </string-array>
+
+    <string-array name="partialWork">
+        <item>Частич.Занятость</item>
+        <item>Удаленная работа</item>
+        <item>Работа в офисе</item>
+        <item>Непол.Занятость</item>
+        <item>Пол.Занятость</item>
+    </string-array>
+
+    <string-array name="fullWork">
+        <item>Пол.Занятость</item>
+        <item>Удаленная работа</item>
+        <item>Работа в офисе</item>
+        <item>Непол.Занятость</item>
+        <item>Частич.Занятость</item>
+    </string-array>
+
+    <string-array name="salary_currancy">
+        <item>Валюта</item>
+        <item>Доллар</item>
+        <item>Евро</item>
+        <item>Рубль</item>
+        <item>Тенге</item>
+    </string-array>
+
+    <string-array name="dollar">
+        <item>Доллар</item>
+        <item>Евро</item>
+        <item>Рубль</item>
+        <item>Тенге</item>
+    </string-array>
+
+    <string-array name="euro">
+        <item>Евро</item>
+        <item>Доллар</item>
+        <item>Рубль</item>
+        <item>Тенге</item>
+    </string-array>
+
+    <string-array name="ruble">
+        <item>Рубль</item>
+        <item>Доллар</item>
+        <item>Евро</item>
+        <item>Тенге</item>
+    </string-array>
+
+    <string-array name="tenge">
+        <item>Тенге</item>
+        <item>Доллар</item>
+        <item>Евро</item>
+        <item>Рубль</item>
+    </string-array>
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="city">Город</string>
+    <string name="userName">ФИО</string>
+    <string name="speciality">Специальность</string>
+    <string name="experience">Опыт</string>
+    <string name="education">Образование</string>
+    <string name="skills">Навыки</string>
+    <string name="information">Доп. Информация</string>
+    <string name="salary">Зарплата</string>
+    <string name="Contacts">Контакты</string>
+    <string name="phone">Телефон</string>
+    <string name="links">Ссылки</string>
+    <string name="instagram">Instagram</string>
+    <string name="telegram">Telegram</string>
+    <string name="create">Добавить</string>
+    <string name="summary_find">Всего найдено резюме: </string>
+    <string name="vacancyName">Название</string>
+    <string name="vacancyCompany">Компания</string>
+    <string name="vacancy_schedule">График</string>
+    <string name="vacancy_experience">Опыт работы</string>
+    <string name="vacancyDuty">Обязанность</string>
+    <string name="vacancy_requirements">Требования</string>
+    <string name="vacancy_conditions">Условия</string>
+    <string name="job_place">Место работы</string>
+    <string name="email_text">Email</string>
+    <string name="vacanciesFind">Всего найдено вакансий:</string>
+    <string name="projectDescription">Описание</string>
+    <string name="projectTerm">Срок</string>
+    <string name="projectsFind">Всего найдено проектов</string>
+    <string name="change">Изменить</string>
+    <string name="refreshInList">Обновить в списке</string>
+    <string name="changePost">Изменить</string>
+    <string name="OpenDrawer">Меню открыто</string>
+    <string name="CloseDrawer">Меню закрыто</string>
+    <string name="change_photo">Изменить фото</string>
+    <string name="userFirstName">ФИО:</string>
+    <string name="userCity">Город:</string>
+    <string name="edit">Редактировать</string>
+    <string name="editUserName">Имя пользователя</string>
+    <string name="save">Готово</string>
+    <string name="Men">Мужской</string>
+    <string name="woman">Женский</string>
+    <string name="userLogin">Логин:</string>
+
 </resources>

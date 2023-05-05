@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PortfolioActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/headerBackground">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/portfolio"
+                    android:textColor="@color/goldyGradient"
+                    android:fontFamily="@font/humanist521bt_roman"
+                    android:textSize="22dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <Button
+                    android:id="@+id/closeProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:drawableRight="@drawable/close_btn" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editPortfolioLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/dark_grey"
+                android:layout_marginTop="25dp"
+                android:hint="Логин"
+                android:paddingVertical="7dp"
+                android:paddingLeft="10dp"
+                android:textColorHint="@color/grey"
+                android:layout_marginHorizontal="35dp"/>
+
+            <EditText
+                android:id="@+id/editPortfolioCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/dark_grey"
+                android:layout_marginTop="25dp"
+                android:hint="Город"
+                android:paddingVertical="7dp"
+                android:paddingLeft="10dp"
+                android:textColorHint="@color/grey"
+                android:layout_marginHorizontal="35dp"/>
+
+            <Spinner
+                android:id="@+id/editPortfolioSpecialitySpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="35dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/editPortfolioSalary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="100dp"
+                    android:background="@color/dark_grey"
+                    android:layout_marginTop="25dp"
+                    android:hint="Зарплата"
+                    android:paddingVertical="7dp"
+                    android:paddingLeft="10dp"
+                    android:textColorHint="@color/grey"
+                    android:layout_marginHorizontal="35dp"/>
+
+                <Spinner
+                    android:id="@+id/editPortfolioCurrencySpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editPortfolioExperience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/dark_grey"
+                android:layout_marginTop="25dp"
+                android:hint="Опыт работы"
+                android:paddingVertical="7dp"
+                android:paddingLeft="10dp"
+                android:textColorHint="@color/grey"
+                android:layout_marginHorizontal="35dp"/>
+
+            <EditText
+                android:id="@+id/editPortfolioEmployment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/dark_grey"
+                android:layout_marginTop="25dp"
+                android:hint="Тип занятости"
+                android:paddingVertical="7dp"
+                android:paddingLeft="10dp"
+                android:textColorHint="@color/grey"
+                android:layout_marginHorizontal="35dp"/>
+
+            <EditText
+                android:id="@+id/editPortfolioEducation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/dark_grey"
+                android:layout_marginTop="25dp"
+                android:hint="Образование"
+                android:paddingVertical="7dp"
+                android:paddingLeft="10dp"
+                android:textColorHint="@color/grey"
+                android:layout_marginHorizontal="35dp"/>
+
+            <EditText
+                android:id="@+id/editPortfolioInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/dark_grey"
+                android:layout_marginTop="25dp"
+                android:hint="Информация о себе"
+                android:paddingVertical="7dp"
+                android:paddingLeft="10dp"
+                android:textColorHint="@color/grey"
+                android:layout_marginHorizontal="35dp"/>
+
+            <EditText
+                android:id="@+id/editPortfolioPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/dark_grey"
+                android:layout_marginTop="25dp"
+                android:hint="Номер телефона"
+                android:paddingVertical="7dp"
+                android:paddingLeft="10dp"
+                android:textColorHint="@color/grey"
+                android:layout_marginHorizontal="35dp"/>
+
+            <EditText
+                android:id="@+id/editPortfolioEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/dark_grey"
+                android:layout_marginTop="25dp"
+                android:hint="Email"
+                android:paddingVertical="7dp"
+                android:paddingLeft="10dp"
+                android:textColorHint="@color/grey"
+                android:layout_marginHorizontal="35dp"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Пол: "
+                    android:layout_marginLeft="40dp"
+                    android:paddingRight="35dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="20dp" />
+
+                <CheckBox
+                    android:id="@+id/portfolioMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/Men"
+                    />
+
+                <CheckBox
+                    android:id="@+id/portfolioFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/woman"
+                    />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/savePortfolio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/greenGradient"
+                android:textAllCaps="false"
+                android:text="@string/save"
+                android:layout_marginHorizontal="36dp"
+                android:paddingVertical="15dp"
+                android:layout_marginBottom="38dp"
+                android:textSize="15dp"
+                android:layout_marginTop="50dp"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

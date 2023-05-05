@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateProjectsActivity"
+    android:background="@color/mainColor"
+    android:id="@+id/create_activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/headerBackground">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_resume"
+                android:textColor="@color/goldyGradient"
+                android:fontFamily="@font/humanist521bt_roman"
+                android:textSize="22dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageButton
+                android:id="@+id/closeCreate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/close_btn"
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="151dp"
+                android:background="@android:color/transparent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="14dp">
+
+            <Button
+                android:id="@+id/createSummary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/summary"
+                android:textAllCaps="false"
+                android:textColor="@color/goldyGradient"
+                android:fontFamily="@font/humanist521bt_roman"
+                android:textSize="20dp"
+                android:backgroundTint="@color/headerBackground"
+                android:layout_marginLeft="20dp"/>
+
+
+            <Button
+                android:id="@+id/createVacancies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/create_vacancies"
+                android:textAllCaps="false"
+                android:fontFamily="@font/humanist521bt_roman"
+                android:textSize="20dp"
+                android:backgroundTint="@color/dark_grey"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/createProject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/create_projects"
+                android:textAllCaps="false"
+                android:fontFamily="@font/humanist521bt_roman"
+                android:textSize="20dp"
+                android:backgroundTint="@color/dark_grey"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:id="@+id/createFrame"
+            android:layout_marginBottom="20dp">
+
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
